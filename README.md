@@ -12,17 +12,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Principal: ");
-        int Principal = scanner.nextInt();
-
+        float Principal = scanner.nextFloat();
 
         System.out.println("Annual Interest Rate: ");
         float Rate = scanner.nextFloat();
         float monthRate = Rate / Percent / Months;
 
         System.out.println("Period(years): ");
-        int Period = scanner.nextInt();
-        int Payments = Period * Months;
-
+        float Period = scanner.nextFloat();
+        float Payments = Period * Months;
 
         double Mortage = Principal
                 * (monthRate * Math.pow(1 + monthRate, Payments)
