@@ -1,32 +1,5 @@
 # Java-Mortage-Calculator
-Mortgage Calculator written in the Java Programming Language.
-
-import java.util.Scanner;
-
-public class Main {
-
-    public static void main(String[] args) {
-        final byte Months = 12;
-        final byte Percent = 100;
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Principal: ");
-        float Principal = scanner.nextFloat();
-
-        System.out.println("Annual Interest Rate: ");
-        float Rate = scanner.nextFloat();
-        float monthRate = Rate / Percent / Months;
-
-        System.out.println("Period(years): ");
-        float Period = scanner.nextFloat();
-        float Payments = Period * Months;
-
-        double Mortage = Principal
-                * (monthRate * Math.pow(1 + monthRate, Payments)
-                / (Math.pow(1 + monthRate, Payments) - 1));
-        System.out.println(Mortage);
+Mortgage Calculator written in the Java Programming Language.  Asks the user for there Prinicipal, Intreset rate, Period of time for the mortagage, and 
 
 
-    }
-}
+
